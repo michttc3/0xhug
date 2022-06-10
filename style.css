@@ -276,7 +276,7 @@ nav:hover ul li:not(:hover){
     padding-top: 100px;
 }  
 @media screen and (max-width: 760px) {  
-    .project-container {  
+    .team {  
          grid-template-columns: repeat(2, 1fr);  
    }  
 }  
@@ -284,7 +284,7 @@ nav:hover ul li:not(:hover){
 
  h1.special{  
   text-align: center;
-      font-size: 3rem;
+      font-size: 40px;
       font-family: 'Ginger';
         background-image: linear-gradient(-225deg,
         rgba(94,114,235,1) 0%,
@@ -454,7 +454,7 @@ img{
     will-change: transform;  
     transform: skewX(0.001deg);  
     transition: transform 0.35s ease-in-out;  
-    border-radius:15px;
+    border-radius:20px;
 }  
 
 .section-tours {
@@ -569,15 +569,30 @@ h6{
     text-align: center;
   }
   .row .col {
-  padding-left: 10%;
-  width:80%;
+  width:90%;
   justify-content: center;
     text-align: center;
 }
+.card__side {
+  font-size: 15px;
+  text-align: center;
+  height: 30rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  
+}
+
 h1.special{
   font-size: 2rem;
   position:relative;
   top: 30%;
+  padding: 2%
 }
 
 }  
@@ -931,7 +946,7 @@ aside#mouse-parallax ul#scene .layer .canvas.group4 {
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
   background-size: 10rem;
-  background-position: 80% 38%;
+  background-position: 80% 36%;
     z-index: 2;
 }
 
@@ -942,26 +957,26 @@ aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/cool.png");
     z-index: 3;
     background-size: 13rem;
-    background-position:  50% 12%;
+    background-position:  50% 80vh;
 }
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
-  background-size: 5rem;
-  background-position: 50% 27%;
+  background-size: 3.6rem;
+  background-position: 50% 174vh;
     z-index: 2;
 }
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-image: url("images/smilee.png");
-  background-size: 13rem;
-  background-position: 50% 38%;
+  background-size: 9rem;
+  background-position: 50% 260vh;
 
     z-index: 1;
 }
   aside#mouse-parallax ul#scene .layer .canvas.group2 {
     z-index: 1;
     background-image: url("images/rocket.png");
-    background-size: 13rem;
-    background-position: 50% 49%;
+    background-size: 9rem;
+    background-position: 50% 345vh;
   }
   h4{
     font-size: 1.5rem;

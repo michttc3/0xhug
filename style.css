@@ -67,8 +67,28 @@ nav{
 .logo{
   float:left;
   margin-top:0rem;
-
-}
+}/* Logo */
+  .navbar-brand {
+    margin: 0;
+    font-size: 40px;
+    padding: 30px;
+    font-family: "Fredoka";
+    text-decoration: none;
+    background-image: linear-gradient(-225deg,
+        rgba(94,114,235,1) 0%,
+        rgba(255,145,144,1) 29%,
+        rgba(254,193,149,1) 67%,
+        #ebe75c 100%);
+        
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hueRotate 6s ease-in-out 3s infinite;
+  }
 .logo img{
   width:8rem;
   height:8rem;
@@ -130,22 +150,24 @@ nav:hover ul li:not(:hover){
   .bar::before,
   .bar::after{
     position:absolute;
-    background-color:rgb(220, 166, 223);
+    background-color:white;
     margin:auto;
-    width:100%;
+    width:80%;
     height:3px;
     content:"";
-    top:50%;
+    top:20%;
     left:0;
+    border-radius: 10%;
   }
   .bar{
     margin-top:-2px;
+    width:80%;
   }
   .bar::before{
-    top: -1.2rem;
+    top: -1rem;
   }
   .bar::after{
-    top:1.2rem;
+    top:1rem;
   }
   .bar::before,
   .bar::after{
@@ -260,11 +282,9 @@ nav:hover ul li:not(:hover){
 }  
 
 
-
-
  h1.special{  
   text-align: center;
-      font-size: 40px;
+      font-size: 3rem;
       font-family: 'Ginger';
         background-image: linear-gradient(-225deg,
         rgba(94,114,235,1) 0%,
@@ -276,7 +296,6 @@ nav:hover ul li:not(:hover){
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
@@ -314,19 +333,7 @@ p.gs_reveal{
 
 
   
-  /* Logo */
-  .navbar-brand {
-    margin: 0;
-    grid-area: author;
-    font-size: 40px;
-    padding: 30px;
-    font-family: "Fredoka";
-    background-image: linear-gradient(90deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    transform: translateY(-50px);
-    transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 100ms;
-  }
+  
 
   /* Cursor */
 
@@ -541,11 +548,16 @@ h6{
 }
 
 @media screen and (max-width: 760px) {  
+  .team {  
+       grid-template-columns: repeat(2, 1fr);  
+ }  
+} 
+@media screen and (max-width: 760px) {  
   .card_project {
     perspective: 100rem;
     -moz-perspective: 100rem;
     height: 35rem;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     text-align: center;
   }
@@ -553,19 +565,25 @@ h6{
   .row {
     display:block;
     position:relative;
-    width: 100%;
     justify-content: center;
     text-align: center;
   }
   .row .col {
-  width: 100%;
-  padding: 5%;
+  padding-left: 10%;
+  width:80%;
+  justify-content: center;
+    text-align: center;
+}
+h1.special{
+  font-size: 2rem;
+  position:relative;
+  top: 30%;
 }
 
 }  
 
-
-.smiley{
+/* Smiley */
+/* .smiley{
   position: fixed;
   width: 100%;
   height: 100px;
@@ -627,8 +645,11 @@ h6{
   to {
       transform: translate(50%, 50%);
   }
-}
+} */
 
+
+/* 
+hero */
 
 .hero{
   position:relative;
@@ -647,8 +668,8 @@ h1{
   position: absolute;
   top: 40%;
   left: 50%;
-  margin-top: 150px;
-  font-size: 50px;
+  margin-top: 10%;
+  font-size: 5rem;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
   color: #12000a;
@@ -658,38 +679,38 @@ h1{
   animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
 }
 
-#svgWrap_1,
-#svgWrap_2{
+#svgWrap_1{
   position: absolute;
   height: auto;
   width: 70%;
   max-width: 100%;
   top: 40%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 760px) {  
+  #svgWrap_1{
+    position: absolute;
+    height: auto;
+    width: 90%;
+    max-width: 100%;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+} 
+
 #svgWrap_1,
-#svgWrap_2,
 .hero{
   animation: hueRotate 6s ease-in-out 3s infinite;
 }
-
 
 #id1_1,
 #id2_1,
 #id3_1{
   stroke: #ff005d;
   stroke-width: 5px;
-  fill: transparent;
-  filter: url(#glow);
-}
-
-#id1_2,
-#id2_2,
-#id3_2{
-  stroke: #12000a;
-  stroke-width: 3px;
   fill: transparent;
   filter: url(#glow);
 }
@@ -796,19 +817,14 @@ h1{
 
 
 
-
-
 /* Parallax */
 #parallax,
 .layer {
-    height: 250vh;
+    height: 80%;
     position: absolute;
     width: 100%;
-    margin-top: -25%;
     
 }
-
-
 
 aside#mouse-parallax {
     width: 100%;
@@ -868,11 +884,9 @@ aside#mouse-parallax ul#scene .layer {
 
 
 aside#mouse-parallax ul#scene .layer .canvas {
-    width: 108%;
-    height: 208%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: -4%;
-    left: -4%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -881,13 +895,18 @@ aside#mouse-parallax ul#scene .layer .canvas {
 aside#mouse-parallax ul#scene .layer:nth-of-type(2) {
     z-index: 1;
 }
-
+aside#mouse-parallax ul#scene .layer .canvas.group6 {
+  background-image: url("images/cool.png");
+    z-index: 3;
+    background-size: 18rem;
+    background-position:  50% 15%;
+}
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
   z-index: 1;
   background-image: url("images/rocket.png");
-  background-size: 300px;
-  background-position: 980px 2350px;
+  background-size: 20rem;
+  background-position: 82% 58%;
 }
 
 /* aside#mouse-parallax ul#scene .layer .canvas.group3 {
@@ -903,27 +922,73 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(3) {
 
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-image: url("images/smilee.png");
-  background-size: 250px;
-  background-position: 200px 1900px;
+  background-size: 20rem;
+  background-position: 16% 47%;
 
     z-index: 1;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
-  background-size: 150px;
-  background-position: 1200px 1450px;
+  background-size: 10rem;
+  background-position: 80% 38%;
     z-index: 2;
 }
 
-aside#mouse-parallax ul#scene .layer .canvas.group6 {
+
+
+@media screen and (max-width: 760px) {  
+  aside#mouse-parallax ul#scene .layer .canvas.group6 {
   background-image: url("images/cool.png");
     z-index: 3;
-    background-size: 300px;
-    background-position:  40% 15%;
+    background-size: 13rem;
+    background-position:  50% 12%;
 }
+aside#mouse-parallax ul#scene .layer .canvas.group5 {
+  background-image: url("images/heart.png");
+  background-size: 5rem;
+  background-position: 50% 27%;
+    z-index: 2;
+}
+aside#mouse-parallax ul#scene .layer .canvas.group4 {
+  background-image: url("images/smilee.png");
+  background-size: 13rem;
+  background-position: 50% 38%;
 
-
+    z-index: 1;
+}
+  aside#mouse-parallax ul#scene .layer .canvas.group2 {
+    z-index: 1;
+    background-image: url("images/rocket.png");
+    background-size: 13rem;
+    background-position: 50% 49%;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  .what .about-text-left {
+    text-align: center;
+    padding-bottom: 100px;
+    padding: 5%;
+    margin-top: 6%;
+  }
+  .what .about-text-right {
+    text-align: center;
+    padding-bottom: 100px;
+    padding: 5%;
+    margin-top: 6%;
+  }
+  p.gs_reveal{
+    font-size: 1.3rem;
+  color:#ccc;
+  line-height: 150%;
+  }
+  h5{
+    font-size: 2rem;
+    padding:5px;
+    padding-top: 40%;
+  }
+} 
 
 
 

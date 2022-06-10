@@ -170,6 +170,17 @@ $('.menu').on('click', function (){
 		$(this).addClass('active');
 		$('body').addClass('menu-open')
 	}
+	isActive = !isActive;
+})
 
+var isActive = true;
+$('.navbar-collapse a').on('click', function (){
+	if (isActive){
+		$(this).removeClass('active');
+		$('body').removeClass('menu-open')
+	} else{
+		$(this).addClass('active');
+		$('body').addClass('menu-open')
+	}
 	isActive = !isActive;
 })

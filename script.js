@@ -157,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			return preloaderOutTl;
 		  }
 
-
+		  var scene = document.getElementById('scene');
+		  var parallax = new Parallax(scene);
 		  
 		 

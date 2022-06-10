@@ -1047,14 +1047,14 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(2) {
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
   z-index: 1;
-  background-image: url('/images/rocket.png');
+  background-image: url("images/rocket.png");
   background-size: 300px;
   background-position: 980px 2350px;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group3 {
     z-index: 2;
-    background-image: url('/images/dj.png');
+    background-image: url("images/dj.png");
     background-size: 250px;
     background-position: 640px 560px;
 }
@@ -1064,7 +1064,7 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(3) {
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
-  background-image: url('/images/smilee.png');
+  background-image: url("images/smilee.png");
   background-size: 250px;
   background-position: 200px 1900px;
 
@@ -1072,14 +1072,14 @@ aside#mouse-parallax ul#scene .layer .canvas.group4 {
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
-  background-image: url('/images/heart.png');
+  background-image: url("images/heart.png");
   background-size: 150px;
   background-position: 1200px 1450px;
     z-index: 2;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group6 {
-  background-image: url('/images/cool.png');
+  background-image: url("images/cool.png");
     z-index: 3;
     background-size: 200px;
     background-position: 130px 300px;

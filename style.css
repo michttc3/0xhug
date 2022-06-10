@@ -42,9 +42,7 @@ header{
   overflow:hidden;
   background-color: black;
 }
-.custom-cursor{
-  display: none;
-}
+
 
 .menu{
   display:none;

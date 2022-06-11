@@ -22,7 +22,7 @@
   body {
     height: 100%;
     position: relative;
-    font-family: 'Ginger', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     overflow-x: hidden;
   }
   ::-webkit-scrollbar {
@@ -51,7 +51,7 @@ header{
 nav{
   width: 100%;
   height: 4rem;
-  font-family: "Ginger";
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size:1.5rem;
   line-height: 5rem;
   
@@ -104,7 +104,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  font-family: 'Ginger';
+  font-family: 'M PLUS Rounded 1c', sans-serif;
         background-image: linear-gradient(-225deg,
         rgba(94,114,235,1) 0%,
         rgba(255,145,144,1) 29%,
@@ -219,7 +219,7 @@ nav:hover ul li:not(:hover){
     width: 100%;
     height:min-content;
     font-size: 30px;
-    font-family: "Ginger";
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     justify-content: center;
     text-align: center;
     padding-left: 8%;
@@ -285,7 +285,7 @@ nav:hover ul li:not(:hover){
  h1.special{  
   text-align: center;
       font-size: 40px;
-      font-family: 'Ginger';
+      font-family: 'M PLUS Rounded 1c', sans-serif;
         background-image: linear-gradient(-225deg,
         rgba(94,114,235,1) 0%,
         rgba(255,145,144,1) 29%,
@@ -309,7 +309,7 @@ h4{
     color:#5e72eb;
     width: 100%;
     text-align: center;
-    font-family: "Ginger";
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 h4 .title {
@@ -542,7 +542,7 @@ h6{
   color:rgba(94,114,235,1);
   width: 100%;
   text-align: center;
-  font-family: "Ginger";
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   animation: hueRotate 6s ease-in-out 3s infinite;
 
 }
@@ -689,7 +689,7 @@ h1{
   transform: translate(-50%, -50%);
   color: #12000a;
   font-weight: 200;
-  font-family: "Ginger";
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   text-shadow: 0px 0px 4px #12000a;
   animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
 }
@@ -914,7 +914,7 @@ aside#mouse-parallax ul#scene .layer .canvas.group6 {
   background-image: url("images/cool.png");
     z-index: 3;
     background-size: 18rem;
-    background-position:  50% 15%;
+    background-position:  50% 16%;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
@@ -938,15 +938,15 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(3) {
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-image: url("images/smilee.png");
   background-size: 20rem;
-  background-position: 16% 47%;
+  background-position: 16% 48%;
 
     z-index: 1;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
-  background-size: 10rem;
-  background-position: 80% 36%;
+  background-size: 8rem;
+  background-position: 80% 38%;
     z-index: 2;
 }
 

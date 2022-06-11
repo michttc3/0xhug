@@ -1039,6 +1039,7 @@ p{
   font-family: 'M PLUS Rounded 1c', sans-serif;;
   font-size: 18px;
   line-height: 110%;
+  padding: 5px;
 }
 
 .card {
@@ -1073,6 +1074,9 @@ p{
   color: #ffffff;
   font-size: 15px;
   z-index: 30;
+  letter-spacing: -1px;
+  padding-bottom: 3px;
+  line-height: 90%;
 }
 
 .skills-container {

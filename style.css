@@ -284,7 +284,7 @@ nav:hover ul li:not(:hover){
 
  h1.special{  
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background-image: linear-gradient(-225deg,
         rgba(94,114,235,1) 0%,
@@ -833,9 +833,10 @@ h1{
 /* Parallax */
 #parallax,
 .layer {
-    height: 80%;
+    height: 150%;
     position: absolute;
     width: 100%;
+    margin-top: -15%;
     
 }
 
@@ -912,14 +913,14 @@ aside#mouse-parallax ul#scene .layer .canvas.group6 {
   background-image: url("images/cool.png");
     z-index: 3;
     background-size: 18rem;
-    background-position:  50% 16%;
+    background-position:  40% 12%;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
   z-index: 1;
   background-image: url("images/rocket.png");
   background-size: 20rem;
-  background-position: 82% 58%;
+  background-position: 76% 85%;
 }
 
 /* aside#mouse-parallax ul#scene .layer .canvas.group3 {
@@ -935,27 +936,37 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(3) {
 
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-image: url("images/smilee.png");
-  background-size: 20rem;
-  background-position: 16% 48%;
+  background-size: 16rem;
+  background-position: 8% 67%;
 
     z-index: 1;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
-  background-size: 8rem;
-  background-position: 80% 38%;
+  background-size: 7rem;
+  background-position: 75% 50%;
     z-index: 2;
 }
 
 
 
 @media screen and (max-width: 760px) {  
+  #parallax,
+.layer {
+    height: 150%;
+    position: absolute;
+    width: 100%;
+    margin-top: -25%;
+    z-index: 9000;
+    
+}
   aside#mouse-parallax ul#scene .layer .canvas.group6 {
   background-image: url("images/cool.png");
-    z-index: 3;
+    z-index: 9000;
     background-size: 13rem;
-    background-position:  50% 70vh;
+    background-position:  40% 0%;
+    display:none;
   
 }
 aside#mouse-parallax ul#scene .layer .canvas.group5 {

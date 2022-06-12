@@ -140,9 +140,9 @@ nav:hover ul li:not(:hover){
     display:block;
     position:fixed;
     width:3rem;
-    height:3rem;
-    top:3rem;
-    right:3rem;
+    height:1rem;
+    top:2rem;
+    right:2rem;
     z-index:999;
     cursor:pointer;
   }
@@ -152,11 +152,11 @@ nav:hover ul li:not(:hover){
     position:absolute;
     background-color:white;
     margin:auto;
-    width:80%;
+    width:100%;
     height:3px;
     content:"";
     top:20%;
-    left:0;
+    right:0;
     border-radius: 10%;
   }
   .bar{
@@ -164,10 +164,10 @@ nav:hover ul li:not(:hover){
     width:80%;
   }
   .bar::before{
-    top: -1rem;
+    top: -.5rem;
   }
   .bar::after{
-    top:1rem;
+    top:.5rem;
   }
   .bar::before,
   .bar::after{
@@ -955,13 +955,15 @@ aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/cool.png");
     z-index: 3;
     background-size: 13rem;
-    background-position:  50% 80vh;
+    background-position:  50% 70vh;
+  
 }
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
   background-image: url("images/heart.png");
-  background-size: 3.6rem;
-  background-position: 50% 174vh;
+  background-size: 1.6rem;
+  background-position: 20% 174vh;
     z-index: 2;
+    display:none;
 }
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-image: url("images/smilee.png");
@@ -969,12 +971,14 @@ aside#mouse-parallax ul#scene .layer .canvas.group4 {
   background-position: 50% 260vh;
 
     z-index: 1;
+    display:none;
 }
   aside#mouse-parallax ul#scene .layer .canvas.group2 {
     z-index: 1;
     background-image: url("images/rocket.png");
     background-size: 9rem;
     background-position: 50% 345vh;
+    display:none;
   }
   h4{
     font-size: 1.5rem;
@@ -999,7 +1003,7 @@ aside#mouse-parallax ul#scene .layer .canvas.group4 {
   h5{
     font-size: 2rem;
     padding:5px;
-    padding-top: 40%;
+    padding-top: 10%;
   }
 } 
 

@@ -142,7 +142,7 @@ opacity:0.5;
   width:3rem;
   height:1rem;
   top:2rem;
-  right:2rem;
+  right:1rem;
   z-index:999;
   cursor:pointer;
 }
@@ -162,6 +162,7 @@ opacity:0.5;
 .bar{
   margin-top:-2px;
   width:80%;
+  right:5px;
 }
 .bar::before{
   top: -.5rem;
@@ -187,7 +188,7 @@ opacity:0.5;
   top:0;
 }
 nav{
-  width:25rem;
+  width:100%;
   height:100%;
   background-color:blanchedalmond;
   position:fixed;
@@ -323,9 +324,10 @@ line-height: 150%;
 /*footer*/
 footer {
   background-color: black;
-  padding-bottom: 5em;
+  padding-bottom: 2rem;
   text-align: center;
   font-size: 3em;
+  outline:none;
   
 }
 
@@ -351,7 +353,13 @@ z-index: 1000;
 .custom-cursor--link {
 transform: translate(-50%, -50%) scale(1);
 }
-
+/* @media screen and (max-width: 760px) {  
+.custom-cursor {
+  display:none;
+}
+.custom-cursor--link {
+  display:none;
+}  } */
 
 
 /* Loading */
@@ -524,13 +532,16 @@ top: 50%;
 left: 50%;
 width: 320px;
 font-size: 18px;
-text-align: center;
+text-align: left;
+letter-spacing: -1.2px;
+line-height: 110%;
 transform: translate(-50%, -50%);
 }
 .card__text a {
-font-size: 25px;
+font-size: 30px;
 z-index: 100;;
 margin-bottom: 0;
+text-align: center;
 color: rgba(94,114,235,1);
 }
 
@@ -593,6 +604,19 @@ top: 30%;
 padding: 2%;
 }
 
+.card__text {
+color: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 320px;
+font-size: 18px;
+text-align: left;
+letter-spacing: -1.2px;
+line-height: 110%;
+padding:10px;
+transform: translate(-50%, -50%);
+}
 }  
 
 /* Smiley */
@@ -948,43 +972,10 @@ background-position: 75% 50%;
 @media screen and (max-width: 760px) {  
 #parallax,
 .layer {
-  height: 150%;
-  position: absolute;
-  width: 100%;
-  margin-top: -25%;
-  z-index: 9000;
+  display:none;
   
 }
-aside#mouse-parallax ul#scene .layer .canvas.group6 {
-background-image: url("images/cool.png");
-  z-index: 9000;
-  background-size: 13rem;
-  background-position:  40% 0%;
-  display:none;
 
-}
-aside#mouse-parallax ul#scene .layer .canvas.group5 {
-background-image: url("images/heart.png");
-background-size: 1.6rem;
-background-position: 20% 174vh;
-  z-index: 2;
-  display:none;
-}
-aside#mouse-parallax ul#scene .layer .canvas.group4 {
-background-image: url("images/smilee.png");
-background-size: 9rem;
-background-position: 50% 260vh;
-
-  z-index: 1;
-  display:none;
-}
-aside#mouse-parallax ul#scene .layer .canvas.group2 {
-  z-index: 1;
-  background-image: url("images/rocket.png");
-  background-size: 9rem;
-  background-position: 50% 345vh;
-  display:none;
-}
 h4{
   font-size: 1.5rem;
 }
@@ -1079,9 +1070,9 @@ text-decoration: none;
 
 .summary h3 {
 color: #ffffff;
-font-size: 15px;
+font-size: 14px;
 z-index: 30;
-letter-spacing: -1px;
+letter-spacing: -1.2px;
 padding-bottom: 3px;
 line-height: 90%;
 }

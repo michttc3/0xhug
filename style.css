@@ -520,7 +520,7 @@ color: #fff;
 position: absolute;
 top: 50%;
 left: 50%;
-width: 30px;
+width: 320px;
 font-size: 18px;
 text-align: left;
 letter-spacing: -1.2px;
@@ -862,14 +862,14 @@ aside#mouse-parallax ul#scene .layer .canvas.group6 {
 background-image: url("images/cool.png");
   z-index: 3;
   background-size: 18rem;
-  background-position:  40% 12%;
+  background-position:  40% 11%;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
 z-index: 1;
 background-image: url("images/rocket.png");
 background-size: 20rem;
-background-position: 76% 85%;
+background-position: 76% 82%;
 }
 
 /* aside#mouse-parallax ul#scene .layer .canvas.group3 {
@@ -886,7 +886,7 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(3) {
 aside#mouse-parallax ul#scene .layer .canvas.group4 {
 background-image: url("images/smilee.png");
 background-size: 16rem;
-background-position: 8% 67%;
+background-position: 8% 64%;
 
   z-index: 1;
 }
@@ -894,7 +894,7 @@ background-position: 8% 67%;
 aside#mouse-parallax ul#scene .layer .canvas.group5 {
 background-image: url("images/heart.png");
 background-size: 7rem;
-background-position: 75% 50%;
+background-position: 73% 48%;
   z-index: 2;
 }
 

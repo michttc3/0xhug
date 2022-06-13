@@ -353,13 +353,13 @@ p.gs_reveal{
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (max-width: 760px) {  
+/* @media screen and (max-width: 760px) {  
   .custom-cursor {
     display:none;
   }
   .custom-cursor--link {
     display:none;
-}  }
+}  } */
 
 
 /* Loading */

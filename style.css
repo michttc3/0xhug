@@ -162,7 +162,7 @@ nav:hover ul li:not(:hover){
   .bar{
     margin-top:-2px;
     width:80%;
-    right:30px;
+    right:10px;
   }
   .bar::before{
     top: -.5rem;

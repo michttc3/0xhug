@@ -343,7 +343,7 @@ z-index: 1000;
 .custom-cursor--link {
 transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (max-width: 760px) {  
+@media screen and (max-width: 1400px) {  
 .custom-cursor {
   display:none;
 }
@@ -906,7 +906,7 @@ background-position: 73% 48%;
 
 
 
-@media screen and (max-width: 760px) {  
+@media screen and (max-width: 1400px) {  
 #parallax,
 .layer {
   display:none;

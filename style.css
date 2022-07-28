@@ -639,8 +639,8 @@ h1.special{
 @media screen and (max-width: 760px) {  
     
  h1.special {
-  font-size: 20px;
-  margin-top: -20%;
+  font-size: 18px;
+  margin-top: -40%;
 }
 }  
 

@@ -24,6 +24,7 @@ body {
   position: relative;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   overflow-x: hidden;
+  background-color: black;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -273,22 +274,6 @@ h5 {
 }  
 
 
-h1.special{  
-  text-align: center;
-  font-size: 2.2rem;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  background-image: linear-gradient(-225deg,
-      rgba(94,114,235,1) 0%,
-      rgba(255,145,144,1) 29%,
-      rgba(254,193,149,1) 67%,
-      #ebe75c 100%);
-  background-size: 200% auto;
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-}
 
 h4{
   font-size: 40px;
@@ -343,13 +328,13 @@ z-index: 1000;
 .custom-cursor--link {
 transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (max-width: 1400px) {  
+/* @media screen and (max-width: 1400px) {  
 .custom-cursor {
   display:none;
 }
 .custom-cursor--link {
   display:none;
-}  }
+}  } */
 
 
 /* Loading */
@@ -593,12 +578,7 @@ box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 
 }
 
-h1.special{
-font-size: 1.5rem;
-position:relative;
-top: 30%;
-padding: 2%;
-}
+
 
 .card__text {
 color: #fff;
@@ -623,38 +603,57 @@ hero */
 position:relative;
 top: 0%;
 left: 0%;
-height: 100vh;
+height: 70vh;
 width: 100%;
-margin: 0px;
+margin-top: 8%;
 background: black;
 overflow: hidden;
-padding: 10px;
+
 }
 
+#subtitle{
+  height: 50vh;
+  margin-top: -15%;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
 
-h1{
-position: absolute;
-top: 40%;
-left: 50%;
-margin-top: 10%;
-font-size: 5rem;
-text-transform: uppercase;
-transform: translate(-50%, -50%);
-color: #12000a;
-font-weight: 200;
-font-family: 'M PLUS Rounded 1c', sans-serif;
-text-shadow: 0px 0px 4px #12000a;
-animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
 }
+h1.special{  
+  font-size: 2em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-image: linear-gradient(-225deg,
+      rgba(94,114,235,1) 0%,
+      rgba(255,145,144,1) 29%,
+      rgba(254,193,149,1) 67%,
+      #ebe75c 100%);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 0px 0px 4px #12000a;
+  animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
+}
+@media screen and (max-width: 760px) {  
+    
+ h1.special {
+  font-size: 20px;
+  margin-top: -20%;
+}
+}  
+
 
 #svgWrap_1{
 position: absolute;
 height: auto;
-width: 70%;
+width: 60%;
 max-width: 100%;
 top: 40%;
-left: 55%;
+left: 52%;
 transform: translate(-50%, -50%);
+background-color: transparent;
 }
 
 @media screen and (max-width: 760px) {  
@@ -792,6 +791,7 @@ animation: drawLine1 2.5s ease-in-out 1s forwards, flicker1 4s linear 5s infinit
   position: absolute;
   width: 100%;
   margin-top: -15%;
+  z-index: 1000;
   
 }
 
@@ -805,7 +805,7 @@ aside#mouse-parallax {
   overflow: hidden;
   overflow: hidden;
   z-index: 2;
-  pointer-events: none;
+
 }
 
 aside#mouse-parallax ul#scene {
@@ -867,8 +867,8 @@ aside#mouse-parallax ul#scene .layer:nth-of-type(2) {
 aside#mouse-parallax ul#scene .layer .canvas.group6 {
 background-image: url("images/cool.png");
   z-index: 3;
-  background-size: 18rem;
-  background-position:  40% 11%;
+  background-size: 15rem;
+  background-position:  40% 10%;
 }
 
 aside#mouse-parallax ul#scene .layer .canvas.group2 {
